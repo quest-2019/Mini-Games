@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Guessing Game</title>
+		<link href="style.css" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -29,7 +30,7 @@
 					}
 				}
 				
-				document.getElementById("dia").innerHTML = "Congratulations! You got it! The number was " + rand;
+				document.getElementById("dia").innerHTML = "<marquee scrollamount=\"15\">Congratulations! You got it! The number was " + rand + "!</marquee>";
 			}
 			
 			function genRandom(min, max) {
