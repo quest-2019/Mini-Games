@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Guessing Game</title>
+	</head>
+	
+	<body>
+		<button onclick="dialogue()">Click Here to Start Game</button>
+		<p id="dia">Hello!</p>
+		<img src="msho.png">
+		<script>
+			function dialogue() {
+				if (document.getElementById("dia").innerHTML == "Hello!") {
+					document.getElementById("dia").innerHTML = "I'm thinking of a number. Try to guess it!";
+				}
+			}
+		</script>
+	<body>
+<html>
