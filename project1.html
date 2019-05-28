@@ -10,10 +10,32 @@
 		<img src="msho.png">
 		<script>
 			function dialogue() {
-				if (document.getElementById("dia").innerHTML == "Hello!") {
-					document.getElementById("dia").innerHTML = "I'm thinking of a number. Try to guess it!";
+				var rand = genRandom(1, 20);		
+
+				while (1 == 1) {
+					var guess = prompt("I'm thinking of a number 1-20. Try to guess it! (Please Don't Press Cancel)", "1");
+					guess = parseInt(guess, 10);
+					
+					if (guess > rand) {
+						alert("That's too high!");
+					}
+					
+					else if (guess < rand) {
+						alert("That's too low!");
+					}
+					
+					else {
+						break;
+					}
 				}
+				
+				document.getElementById("dia").innerHTML = "Congratulations! You got it! The number was " + rand;
 			}
+			
+			function genRandom(min, max) {
+				return Math.floor(Math.random() * (max - min) + min);
+			}
+			
 		</script>
 	<body>
 <html>
