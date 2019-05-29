@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hangman</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<p>Welcome to Hangman!</p>
+		<p>Guess My Word!</p>
+		<p id="board"></p>
+		<script>
+		
+			function update_board(word_array) {
+				document.getElementById("board").innerHTML = current_state.join(" ");
+			}
+		
+			var word_list = ["programming",
+							 "javascript",
+							 "chocolate",
+							 "quest",
+							 "computer"];
+							 
+			var word = word_list[Math.floor(Math.random() * word_list.length)];
+
+			var current_state = [];
+
+			for (var i = 0; i < word.length; i++) {
+				current_state.push("_");
+			}
+			
+			document.write(word);
+			update_board(
+			
+		</script>
+	<body>
+<html>
