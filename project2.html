@@ -7,12 +7,32 @@
 	
 	<body>
 		<p>Welcome to Hangman!</p>
-		<p>Guess My Word!</p>
+		<p id="message">Guess My Word!</p>
 		<p id="board"></p>
+		<button onclick="guess()">Click here to guess</button>
+		
 		<script>
 		
 			function update_board(word_array) {
 				document.getElementById("board").innerHTML = current_state.join(" ");
+			}
+			
+			function checkwin(word_array) {
+				if (word_array.join() == word) {
+					document.getElementById("message").innerHTML = "<marquee>You Win!</marquee>";
+				}
+			}
+			
+			function guess() {
+				var g = prompt("Guess a letter", "a");
+				for (var i = 0; i < word.length; i++) {
+					if (g == word[i]) {
+						current_state[i] = g;
+					}
+				}
+				update_board(current_state);
+				console.log(current_state);
+				checkwin(current_state);
 			}
 		
 			var word_list = ["programming",
@@ -29,8 +49,7 @@
 				current_state.push("_");
 			}
 			
-			document.write(word);
-			update_board(
+			update_board(current_state);
 			
 		</script>
 	<body>
