@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Classes and Objects</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+
+	<body>
+        <script>
+            class Person {
+                 constructor(name, age) {
+                    this.name = name;
+                    this.age = age;
+                }
+
+                greet() {
+                    document.write("Hello I am " + this.name + ". I am " + this.age + " years old.");
+                    return "Hello I am " + this.name + ". I am " + this.age + " years old."
+                }
+            }
+
+            var john = new Person("John Baek", 17);
+            console.log(john.greet());
+
+        </script>
+	<body>
+<html>
