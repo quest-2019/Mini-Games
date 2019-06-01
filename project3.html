@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Classes and Objects</title>
+        <meta charset="UTF-8">
+		<title>Person-O-Tron 3000</title>
 		<link href="style.css" rel="stylesheet">
 	</head>
 
 	<body>
+
+        <p id="message"><em>Welcome to the Person-o-Tron 3000</em></p>
+        <p id="person"></p>
+
+        <button onclick="main()">Click Here to Create A Person</button>
+        <button onclick="person.birthday()">Click Here to Have a Birthday</button>
+
         <script>
             class Person {
+
                  constructor(name, age) {
                     this.name = name;
                     this.age = age;
                 }
 
                 greet() {
-                    document.write("Hello I am " + this.name + ". I am " + this.age + " years old.");
-                    return "Hello I am " + this.name + ". I am " + this.age + " years old."
+                    document.getElementById("person").innerHTML = "Hello I am " + this.name + ". I am " + this.age + " years old.";
+                }
+
+                birthday() {
+                    this.age++;
+                    this.greet()
                 }
             }
 
-            var john = new Person("John Baek", 17);
-            console.log(john.greet());
+            function createPerson() {
+                var name = prompt("What is this person's name?", "John 'Seunguk' Baek");
+                var age = prompt("What is this person's age?", "16");
+
+                return new Person(name, age);
+            }
+
+            function main() {
+                person = createPerson();
+                person.greet()
+            }
 
         </script>
 	<body>
