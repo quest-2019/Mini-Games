@@ -1,0 +1,9 @@
+{
+	"Name of Property": [
+		"Color": "Color"
+		"Cost": 1000,
+		"Rent": [0, 1, 2, 3, 4, Hotel],
+		"Mortgage": 1000,
+		"House/Hotel Cost": 1000
+	]
+}
