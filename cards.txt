@@ -1,0 +1,12 @@
+//Chance Cards
+Advance to Period 1
+	You travel back in time for extra help. Advance to Period 1. Collect 20pt.
+Advance to Calculus
+	If you pass by your first period class, collect 20pt.
+	
+Get out of Frisone's Office For Free
+	This card can be kept. 
+Go Back Three Classrooms
+	You get lost in the hallway. Go back three classrooms.
+Go Directly to Frisone's Office
+	You got caught smoking in the bathroom. Go directly to Frisone's Office. If you pass by Period 1, do not collect 20 pt.
