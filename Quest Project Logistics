@@ -1,0 +1,74 @@
+Herricks High Roller
+A Monopoly Clone
+
+Squares:
+
+Go (Period 1)
+
+Phys (Brown)
+  Gym 
+  Health
+
+Social Studies (Light Blue)
+  US History
+  AP Gov
+  World
+
+Jail
+  Go To Detention
+  Frisone’s Office
+
+Science (Purple)
+  Bio
+  Chem
+  Physics
+
+Music (Orange)
+  Orchestra
+  Band
+  Choir
+
+Free Parking (Free Period)
+
+Math (Red)
+  Geometry
+  Algebra
+  Calculus
+
+World Language (yellow)
+  French
+  Spanish
+  Chinese
+
+
+
+English Department (Green)
+  English 10
+  AP Lang
+  Ap Lit
+
+Computer Science Department (Blue)
+  AP CS
+  CS I and II
+
+Utilities
+  Cafeteria
+  Library
+
+Hallways (Railroad)
+  Senior wing
+  Junior Wing
+  Sophomore Wing
+  Freshman Wing
+
+Money  = Grades
+Houses = Highschool Credit
+Hotels   = AP Credit
+
+Community Chest = Test
+Chance Cards      = Report Card
+
+Income Tax = Senior Lounge
+Luxury Tax  = Senior Lounge
+
+Representing the Properties in JSON
