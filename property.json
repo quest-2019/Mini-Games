@@ -5,5 +5,42 @@
 		"Rent": [0, 1, 2, 3, 4, Hotel],
 		"Mortgage": 1000,
 		"House/Hotel Cost": 1000
+	},
+	
+	"Gym": {
+		"Color": "Physical Education",
+		"Cost": 6,
+		"Rent": [.2, 1, 3, 9, 16, 25],
+		"Mortgage": 3,
+		"House/Hotel Cost": 5
+	}
+	"Health": {
+		"Color": "Physical Education",
+		"Cost": 6,
+		"Rent": [.4, 2, 6, 18, 32, 45],
+		"Mortgage": 3,
+		"House/Hotel Cost": 5
+	}
+	"US History": {
+		"Color": "Social Studies",
+		"Cost": 10,
+		"Rent": [.6, 3, 9, 27, 40, 55],
+		"Mortgage": 5,
+		"House/Hotel Cost": 5
+	}
+	"AP Gov": {
+		"Color": "Social Studies",
+		"Cost": 10,
+		"Rent": [.6, 3, 9, 27, 40, 55],
+		"Mortgage": 5,
+		"House/Hotel Cost": 5
+	}
+	"AP World": {
+		"Color": "Social Studies",
+		"Cost": 12,
+		"Rent": [.8, 4, 10, 30, 45, 60],
+		"Mortgage": 6,
+		"House/Hotel Cost": 5
 	}
 }
+	
