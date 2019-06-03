@@ -184,4 +184,30 @@
 		"Mortgage": 20.0,
 		"House/Hotel Cost": 20.0,
 	},
+	
+	"First Period": {
+		"Color": "Go",
+	},
+	
+	"Senior Lounge": {
+		"Color": "Income Tax",
+		"Cost": 20.0,
+	},
+	
+	"Freshmen Hallway": {
+		"Color": "Railroad",
+		"Cost": 20.0,
+		"Rent": [2.5, 5.0, 10.0, 20.0],
+		"Mortgage": 10.0,
+		"House/Hotel Cost": 20.0,
+	},
+	
+	"Frisone's Office": {
+		"Color": "Jail",
+	},
+	
+	"Library": {
+		"Color": "Utility",
+		"Cost":15.0
+	},
 }
