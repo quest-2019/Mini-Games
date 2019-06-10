@@ -1,0 +1,40 @@
+<!--Herricks High Roller: A Monopoly Clone-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Herricks High Roller</title>
+	</head>
+	
+	<body>
+		<p>Welcome contestants to the Herricks High Roller! Enjoy your stay!</p>
+		<button onclick="setup()">Click here to start</button>
+		<p id="playerInfo"></p>
+		<script>
+			class Person {
+				constructor(name) {
+					this.name = name;
+					this.properties = [];
+					this.points = 150;
+				}
+			}
+			function setup() {
+				var num = prompt("How many players?");
+				num = parseInt(num, 10);
+				
+				var players = [];
+				for (var i=0; i<num; i++) {
+					var name = prompt("Enter a name");
+					let player = new Person(name);
+					players.push(player);
+				}
+
+				var playerString = "";
+				for (var i in players) {
+					playerString += i.name;
+				}
+				document.getElementById("playerInfo").innerHTML = playerString;
+			}
+		</script>
+	</body>
+</html>
