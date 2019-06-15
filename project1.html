@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ms. Ho's Guessing Game</title>
+		<title>Mongoose Guessing Game</title>
 		<link href="style.css" rel="stylesheet">
 	</head>
-	
+
 	<body>
 		<button onclick="dialogue()">Click Here to Start Game</button>
 		<p id="dia" align="center">Hello!</p>
-		<img src="msho.png">
+		<img src="mongoose.jpeg" style="width:500px;height:600px;">
 		<script>
 			function dialogue() {
-				var rand = genRandom(1, 20);		
+				var rand = genRandom(1, 20);
 
 				while (1 == 1) {
 					var guess = prompt("I'm thinking of a number 1-20. Try to guess it! (Please Don't Press Cancel)", "1");
 					guess = parseInt(guess, 10);
-					
+
 					if (guess > rand) {
 						alert("That's too high!");
 					}
-					
+
 					else if (guess < rand) {
 						alert("That's too low!");
 					}
-					
+
 					else {
 						break;
 					}
 				}
-				
+
 				document.getElementById("dia").innerHTML = "<marquee scrollamount=\"15\">Congratulations! You got it! The number was " + rand + "!</marquee>";
 			}
-			
+
 			function genRandom(min, max) {
 				return Math.floor(Math.random() * (max - min) + min);
 			}
-			
+
 		</script>
 	<body>
 <html>
